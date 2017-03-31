@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_welcome"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:allowUndo="true"
+            android:gravity="center"
+            android:text="Welcome"
+            android:textColor="#ffff"
+            android:textSize="50dp" />
+
+        <EditText
+             android:layout_marginTop="40dp"
+            android:id="@+id/et_name"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_shape"
+            android:hint="phone"
+            android:inputType="phone"
+            android:paddingLeft="20dp"
+            android:textColor="#fff"
+            android:textColorHint="#fff" />
+
+        <EditText
+            android:id="@+id/et_psw"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+
+            android:layout_below="@+id/et_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_shape"
+            android:hint="password"
+            android:inputType="numberPassword"
+            android:paddingLeft="20dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="#fff" />
+
+        <Button
+            android:id="@+id/but_login"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/but_login_shape"
+            android:text="login in"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            >
+            <TextView
+                android:id="@+id/tv_regist"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="bottom|right"
+                android:layout_gravity="left"
+                android:text="重新注册"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/colorWhite" />
+
+
+            <TextView
+                android:layout_marginLeft="15dp"
+                android:id="@+id/tv_forget"
+                android:layout_width="20dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="bottom|left"
+                android:text="忘记密码？"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
