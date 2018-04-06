@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <style name="ActionBarStyle" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:titleTextColor">#ffff</item>
-    </style>
-</resources>
